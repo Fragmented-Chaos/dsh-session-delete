@@ -1,0 +1,5 @@
+# Session-delete bundle patch: insert the Host row that serves the delete route.
+# The Client half rides on the same package (dsh.client in package.json).
+- insert:
+    - id: session-delete
+      name: '@local/dsh-session-delete'

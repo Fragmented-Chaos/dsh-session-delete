@@ -1,0 +1,49 @@
+{
+  "name": "dsh-session-delete",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Permanently delete a DSH session from the sidebar: row, archive state and on-disk record.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "test",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fragmented-Chaos/dsh-session-delete.git"
+  },
+  "homepage": "https://github.com/Fragmented-Chaos/dsh-session-delete#readme",
+  "bugs": {
+    "url": "https://github.com/Fragmented-Chaos/dsh-session-delete/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "delete",
+    "sidebar"
+  ],
+  "author": "Rending_Void"
+}
